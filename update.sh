@@ -1,8 +1,9 @@
 #!/bin/bash
-
-cd /home/ludo/workspace/update-apps
-
 echo "Recherche des mises à jour ..."
+
+###################
+# Apps
+###################
 ./heroic.sh
 ./pdfsam.sh
 ./kdenlive.sh
@@ -10,3 +11,8 @@ echo "Recherche des mises à jour ..."
 # ./proton-ge.sh
 ./wine-ge.sh
 ./vkd3d.sh
+
+###################
+# Thèmes
+###################
+theme-qogir.sh
