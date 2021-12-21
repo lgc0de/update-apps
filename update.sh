@@ -15,4 +15,4 @@ echo "Recherche des mises à jour ..."
 ###################
 # Thèmes
 ###################
-./theme/theme-qogir.sh
+./themes/theme-qogir.sh
