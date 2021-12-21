@@ -4,15 +4,15 @@ echo "Recherche des mises à jour ..."
 ###################
 # Apps
 ###################
-./heroic.sh
-./pdfsam.sh
-./kdenlive.sh
-./solar.sh
-# ./proton-ge.sh
-./wine-ge.sh
-./vkd3d.sh
+./apps/heroic.sh
+./apps/pdfsam.sh
+./apps/kdenlive.sh
+./apps/solar.sh
+# ./gaming/proton-ge.sh
+./gaming/wine-ge.sh
+./gaming/vkd3d.sh
 
 ###################
 # Thèmes
 ###################
-theme-qogir.sh
+./theme/theme-qogir.sh
