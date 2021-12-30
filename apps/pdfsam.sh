@@ -5,8 +5,8 @@ releasever=$(curl --silent "https://api.github.com/repos/torakiki/pdfsam/release
 if [ $installedver != $releasever ]; then
     echo "Pdfsam: téléchargement de la version $releasever ..."
     wget -q https://github.com/torakiki/pdfsam/releases/download/v$releasever/pdfsam-$releasever-linux.tar.gz
-    tar -xf pdfsam-$releasever-linux.tar.gz
-    cp -a pdfsam-$releasever-linux/. /opt/pdfsam/ &> /dev/null
+    tar -xf pdfsam-$releasever-linux.tar.gz -C /opt/pdfsam/
+    #cp -a pdfsam-$releasever-linux/. /opt/pdfsam/ &> /dev/null
     rm pdfsam-$releasever-linux.tar.gz
     rm -rf pdfsam-$releasever-linux
     echo "java -jar /opt/pdfsam/pdfsam-basic-$releasever.jar" > /opt/pdfsam/start_pdfsam.sh

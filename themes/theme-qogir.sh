@@ -1,9 +1,9 @@
 #!/bin/bash
 dir="$PWD"
 
-# Installation du thème GTK au niveau system (/usr)
+# Installation du thème GTK au niveau user (/home)
 install_theme() {
-    sudo ./install.sh -c dark -t default
+    ./install.sh -c dark -t default
 }
 
 # Installation du thème d'icone au niveau user (/home)
@@ -11,8 +11,8 @@ install_icon() {
     ./install.sh
 }
 
-if [ ! -d $dir/Qogir ]; then
-    mkdir Qogir
+if [ ! -d $dir/themes/Qogir ]; then
+    mkdir themes/Qogir
 fi
 
 # Téléchargement du thème gtk depuis git si sources absentes
