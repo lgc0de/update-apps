@@ -4,11 +4,9 @@ releasever=$(curl --silent "https://api.github.com/repos/Heroic-Games-Launcher/H
 
 if [ $installedver != $releasever ]; then
     echo "Heroic Games Launcher: téléchargement de la version $releasever ..."
-    wget -q https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$releasever/heroic-$releasever.tar.xz
-    tar -xf heroic-$releasever.tar.xz -C /opt/heroic/
-    #cp -a heroic-$releasever/. 
-    rm heroic-$releasever.tar.xz
-    rm -rf heroic-$releasever
+    wget -q https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$releasever/Heroic-$releasever.AppImage
+    mv Heroic-$releasever.AppImage /opt/heroic/heroic.AppImage
+    chmod +x /opt/heroic/heroic.AppImage
     echo "$releasever" > /opt/heroic/version
     echo "Heroic Games Launcher: mis à jour vers $releasever"
 else
