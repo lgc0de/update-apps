@@ -10,7 +10,7 @@ echo "Recherche des mises à jour ..."
 ./apps/solar.sh
 # ./gaming/proton-ge.sh
 ./gaming/wine-ge.sh
-./gaming/vkd3d.sh
+#./gaming/vkd3d.sh
 
 ###################
 # Thèmes

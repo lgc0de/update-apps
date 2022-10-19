@@ -3,6 +3,7 @@ dxvkver=$(curl --silent "https://api.github.com/repos/lutris/dxvk/releases/lates
 vkd3dver=$(curl --silent "https://api.github.com/repos/lutris/vkd3d/releases/latest" | grep -Po '"tag_name": "\K.*?(?=")' | cut -d'v' -f2)
 
 cd /home/$USER/workspace/vkd3d-proton/
+git submodule update --recursive --remote
 vargit=$(git pull)
 if [ "$vargit" != "Déjà à jour." ]; then
     sudo rm -rf /home/$USER/workspace/vkd3d-proton/lutris/vkd3d-proton-master
