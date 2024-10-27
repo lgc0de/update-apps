@@ -4,13 +4,10 @@ echo "Recherche des mises à jour ..."
 ###################
 # Apps
 ###################
-./apps/heroic.sh
-./apps/pdfsam.sh
+#./apps/heroic.sh
 ./apps/kdenlive.sh
-./apps/solar.sh
-# ./gaming/proton-ge.sh
-./gaming/wine-ge.sh
-#./gaming/vkd3d.sh
+./apps/pdfsam.sh
+./apps/webcord.sh
 
 ###################
 # Thèmes
