@@ -6,9 +6,9 @@ if [ "$installedver" != "$releasever" ]; then
     echo "Pdfsam: téléchargement de la version $releasever ..."
     wget -q https://github.com/torakiki/pdfsam/releases/download/v$releasever/pdfsam-$releasever-linux.tar.gz
     tar -xf pdfsam-$releasever-linux.tar.gz
+    rm -rf /opt/pdfsam/*
     cp -a pdfsam-$releasever-linux/. /opt/pdfsam/ &> /dev/null
     rm pdfsam-$releasever-linux.tar.gz
-    #mv pdfsam-$releasever-linux/* /opt/pdfsam
     rm -rf pdfsam-$releasever-linux
     echo "$releasever" > /opt/pdfsam/version
     echo "Pdfsam: mis à jour vers $releasever"
